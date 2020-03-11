@@ -7,6 +7,7 @@ DigitalOut greenLED(LED_GREEN);
 
 
 int Led(DigitalOut& ledpin);
+int Led2(DigitalOut& ledpin);
 
 
 int main()
@@ -20,8 +21,9 @@ int main()
    while (true) {
 
        Led(redLED);
-
-       Led(greenLED);
+       wait(1);
+       Led2(greenLED);
+       wait(1);
 
    }
 
